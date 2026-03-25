@@ -204,14 +204,14 @@ def parse_args() -> argparse.Namespace:
 	parser.add_argument(
 		"--scan-timeout",
 		type=int,
-		default=8,
+		default=30,
 		help="device scan timeout in seconds (default: 8)",
 	)
 	parser.add_argument(
 		"--service-timeout",
 		type=int,
-		default=10,
-		help="SDP service discovery timeout in seconds (default: 10)",
+		default=30,
+		help="SDP service discovery timeout in seconds (default: 30)",
 	)
 	return parser.parse_args()
 
